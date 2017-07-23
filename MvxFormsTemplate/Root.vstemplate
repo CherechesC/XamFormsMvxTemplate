@@ -1,0 +1,42 @@
+﻿<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Xamarin Forms with MvvmCross 5 Solution Template</Name>
+		<Description>Solution template containing the needed Core, iOS, Android and UWP projects. For easier testing purposes, the solution also includes a UnitTest project and a UITest project.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<ProjectSubType>
+		</ProjectSubType>
+		<SortOrder>1000</SortOrder>
+		<CreateNewFolder>false</CreateNewFolder>
+		<ProvideDefaultName>false</ProvideDefaultName>
+		<LocationField>Enabled</LocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<Icon>__TemplateIcon.ico</Icon>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<SolutionFolder Name="Src">
+				<ProjectTemplateLink ProjectName="$projectname$.Core" CopyParameters="true">
+					MvxForms.Core\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$projectname$.Droid" CopyParameters="true">
+					MvxForms.Droid\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$projectname$.iOS" CopyParameters="true">
+					MvxForms.iOS\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$projectname$.UWP" CopyParameters="true">
+					MvxForms.UWP\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+			<SolutionFolder Name="Tests">
+				<ProjectTemplateLink ProjectName="$projectname$.UITests" CopyParameters="true">
+					MvxForms.UITests\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$projectname$.UnitTests" CopyParameters="true">
+					MvxForms.UnitTests\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>
+

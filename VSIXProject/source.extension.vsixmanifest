@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="VSIXProject.Cristian Chereches.2e7a3a36-865f-46fb-b859-187c3c6fb9b1" Version="1.4" Language="en-US" Publisher="Cristian Chereches" />
-    <DisplayName>Xamarin Forms with MvvmCross Solution Template</DisplayName>
-    <Description xml:space="preserve">Solution template containing the needed Core, iOS, Android and UWP projects for Xamarin.Forms projects. The solution offers integration with the MvvmCross framework. For easier testing purposes, the solution also includes a UnitTest project and a UITest project.</Description>
-    <MoreInfo>https://github.com/CherechesC/XamFormsMvxTemplate</MoreInfo>
+    <Identity Id="VSIXProject.Paul Datsiuk.2e7a3a36-865f-46fb-b859-187c3c6fb9b1" Version="1.9.1" Language="en-US" Publisher="Paul Datsiuk" />
+    <DisplayName>Xamarin Forms with MvvmCross 5 Solution Template</DisplayName>
+    <Description xml:space="preserve">Solution template containing the needed Core, iOS, Android and UWP projects for Xamarin.Forms 2.3.4 projects. The solution offers integration with the MvvmCross 5 framework. For easier testing purposes, the solution also includes a UnitTest project and a UITest project.</Description>
+    <MoreInfo>https://github.com/JTOne123/XamFormsMvxTemplate</MoreInfo>
+    <License>LICENSE.txt</License>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>thumbnail.PNG</PreviewImage>
+    <Tags>mvvmcross, xamarin, forms, uwp</Tags>
   </Metadata>
   <Installation>
-    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
-    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
-    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[14.0,15.0]" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0,15.0]" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Version="[14.0,15.0]" Id="Microsoft.VisualStudio.Community" />
   </Installation>
   <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.6,)" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\XamForms.MvxTemplate.Solution.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\MvxFormsTemplate.zip" />
   </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.26208.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
 </PackageManifest>
