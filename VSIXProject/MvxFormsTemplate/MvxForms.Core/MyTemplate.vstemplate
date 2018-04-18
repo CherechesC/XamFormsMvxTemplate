@@ -1,0 +1,72 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>MvxForms.Core</Name>
+    <Description>Xamarin Forms + MvvmCross Template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MvxForms.Core</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MvxForms.Core.csproj" File="MvxForms.Core.csproj" ReplaceParameters="true">
+      <Folder Name="Behaviors" TargetFolderName="Behaviors">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BehaviorBase.cs">BehaviorBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EventToCommandBehavior.cs">EventToCommandBehavior.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Converters" TargetFolderName="Converters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="NegateBooleanConverter.cs">NegateBooleanConverter.cs</ProjectItem>
+      </Folder>
+      <Folder Name="CustomViews" TargetFolderName="CustomViews" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="DebugTrace.cs">DebugTrace.cs</ProjectItem>
+      <Folder Name="Effects" TargetFolderName="Effects" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="FodyWeavers.xml">FodyWeavers.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FormsApp.xaml">FormsApp.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FormsApp.xaml.cs">FormsApp.xaml.cs</ProjectItem>
+      <Folder Name="Helpers" TargetFolderName="Helpers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TranslateExtension.cs">TranslateExtension.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Model" TargetFolderName="Model" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="MvxApp.cs">MvxApp.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Pages" TargetFolderName="Pages">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml">MainPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml.cs">MainPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SecondPage.xaml">SecondPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SecondPage.xaml.cs">SecondPage.xaml.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Repository" TargetFolderName="Repository" />
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.de-DE.resx">AppResources.de-DE.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.de-DE.Designer.cs">AppResources.de-DE.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.en-US.resx">AppResources.en-US.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.en-US.Designer.cs">AppResources.en-US.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.resx">AppResources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.Designer.cs">AppResources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.ru-RU.resx">AppResources.ru-RU.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.ru-RU.Designer.cs">AppResources.ru-RU.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.uk-UA.resx">AppResources.uk-UA.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppResources.ua-UK.Designer.cs">AppResources.ua-UK.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TranslateExtension.cs">TranslateExtension.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppSettings.cs">AppSettings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IAppSettings.cs">IAppSettings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ILocalizeService.cs">ILocalizeService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Triggers" TargetFolderName="Triggers" />
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.cs">MainViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SecondViewModel.cs">SecondViewModel.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

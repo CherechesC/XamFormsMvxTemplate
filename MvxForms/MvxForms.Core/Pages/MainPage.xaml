@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mvx:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MvxForms.Core.Pages.MainPage"
+             xmlns:res="clr-namespace:MvxForms.Core.Resources;assembly=MvxForms.Core"
+             xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+             Title="Main">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Item"
+         Command="{Binding OpenWebsitePricesPage}"
+         Order="Primary"
+         Priority="0"
+         Icon="Icon.png" />
+  </ContentPage.ToolbarItems>
+  <ContentPage.Content>
+    <Grid>
+      <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Grid.Row="1" Grid.Column="1">
+        <Label Text="{res:Translate MainPageTitle}" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center" 
+               StyleId="MainPageTitleLbl" />
+        <Button Text="{Binding ButtonText}" Command="{Binding PressMeCommand}" />
+        <Button Text="{res:Translate GoToSecondPageText}" Command="{Binding GoToSecondPageCommand}" />
+        <Button Text="To make a contribution" Command="{Binding OpenGithubUrlCommand}" />
+      </StackLayout>
+    </Grid>
+  </ContentPage.Content>
+</mvx:MvxContentPage>

@@ -1,0 +1,40 @@
+replace next text in all project files
+
+1)
+  <ItemGroup>
+    <ProjectReference Include="..\XamForms.MvxTemplate.Core\XamForms.MvxTemplate.Core.csproj">
+      <Project>{74043e51-ef7b-4ce1-af3f-7612ed1d05b6}</Project>
+      <Name>XamForms.MvxTemplate.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj">
+      <Project>{74043e51-ef7b-4ce1-af3f-7612ed1d05b6}</Project>
+      <Name>$ext_safeprojectname$.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+
+2)
+  <ItemGroup>
+    <ProjectReference Include="..\XamForms.MvxTemplate.Droid\XamForms.MvxTemplate.Droid.csproj">
+      <Project>{48d8dcc6-6342-4a62-ab87-b26cbfb3feb1}</Project>
+      <Name>XamForms.MvxTemplate.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XamForms.MvxTemplate.iOS\XamForms.MvxTemplate.iOS.csproj">
+      <Project>{88a375c3-8567-47b7-a040-cf48b7049986}</Project>
+      <Name>XamForms.MvxTemplate.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\$ext_safeprojectname$.Droid\$ext_safeprojectname$.Droid.csproj">
+      <Project>{48d8dcc6-6342-4a62-ab87-b26cbfb3feb1}</Project>
+      <Name>$ext_safeprojectname$.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\$ext_safeprojectname$.iOS\$ext_safeprojectname$.iOS.csproj">
+      <Project>{88a375c3-8567-47b7-a040-cf48b7049986}</Project>
+      <Name>$ext_safeprojectname$.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
